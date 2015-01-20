@@ -26,6 +26,9 @@ call vundle#begin()
 " required!
 Plugin 'gmarik/Vundle.vim'
 
+" You Complete Me
+Plugin 'Valloric/YouCompleteMe'
+
 " My Plugins :
 " nerdtree
 Plugin 'scrooloose/nerdtree'
@@ -56,3 +59,10 @@ map <F8> :NERDTreeToggle<CR>
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
+
+
+"--------------"
+" YouCompleteMe 
+"--------------"
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_autoclose_preview_window_after_completion=1
