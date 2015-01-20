@@ -1,7 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""
 " Common Settings
 """""""""""""""""""""""""""""""""""""""""""""
-
 colors elflord
 set nocompatible
 set nu
@@ -20,24 +19,24 @@ set backspace=indent,eol,start
 "--------"
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" My Bundles :
+" My Plugins :
 " nerdtree
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " powerline
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 " Sudo Edit
-" Bundle 'chrisbra/SudoEdit.vim'
+" Plugin 'chrisbra/SudoEdit.vim'
 
 
 " end
-
+call vundle#end()
 filetype plugin indent on
 
 "-----------"
